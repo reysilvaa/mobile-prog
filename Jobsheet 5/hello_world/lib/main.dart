@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/basic_widget/fab_widget.dart';
+import 'package:hello_world/basic_widget/image_widget.dart';
+import 'package:hello_world/basic_widget/loading_cupertino.dart';
+import 'package:hello_world/basic_widget/text_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -105,6 +109,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            // const MyFABWidgets(),
+            // const MyImageWidget(),
             const Text(
               'You have pushed the button this many times:',
             ),
