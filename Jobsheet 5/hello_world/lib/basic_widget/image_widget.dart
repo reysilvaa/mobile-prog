@@ -5,6 +5,11 @@ class MyImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Image(image: AssetImage("logo_polinema.png"));
+    return const Image(
+      image: AssetImage("logo_polinema.png"),
+      fit: BoxFit.fill,
+      width: 100,
+      height: 100,
+    );
   }
 }

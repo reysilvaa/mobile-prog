@@ -22,11 +22,11 @@ return MaterialApp(
 ```
 !['Output](./image/3.png)
 
-Langkah 2: Floating Action Button (FAB)
+### Langkah 2: Floating Action Button (FAB)
 Button widget terdapat beberapa macam pada flutter yaitu ButtonBar, DropdownButton, TextButton, FloatingActionButton, IconButton, OutlineButton, PopupMenuButton, dan ElevatedButton.
 
 Buat file di basic_widgets > fab_widget.dart. Import stateless widget dari material. Lalu isi kode di dalam method Widget build adalah sebagai berikut.
-
+```dart
 return MaterialApp(
       home: Scaffold(
         floatingActionButton: FloatingActionButton(
@@ -38,11 +38,14 @@ return MaterialApp(
         ),
       ),
     );
-Langkah 3: Scaffold Widget
+```
+!['Output](./image/4.png)
+
+### Langkah 3: Scaffold Widget
 Scaffold widget digunakan untuk mengatur tata letak sesuai dengan material design.
 
 Ubah isi kode main.dart seperti berikut.
-
+```dart
 import 'package:flutter/material.dart';
 
 void main() {
@@ -117,11 +120,14 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-Langkah 4: Dialog Widget
-Dialog widget pada flutter memiliki dua jenis dialog yaitu AlertDialog dan SimpleDialog.
+```
+!['Output](./image/5.png)
 
-Ubah isi kode main.dart seperti berikut.
+### Langkah 4: Dialog Widget
+Dialog widget pada flutter memiliki dua jenis dialog yaitu `AlertDialog` dan `SimpleDialog`.
 
+Ubah isi kode `main.dart` seperti berikut.
+```dart
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -178,11 +184,13 @@ showAlertDialog(BuildContext context) {
     },
   );
 }
-Langkah 5: Input dan Selection Widget
+```
+
+### Langkah 5: Input dan Selection Widget
 Flutter menyediakan widget yang dapat menerima input dari pengguna aplikasi yaitu antara lain Checkbox, Date and Time Pickers, Radio Button, Slider, Switch, TextField.
 
 Contoh penggunaan TextField widget adalah sebagai berikut:
-
+```dart
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -202,9 +210,12 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Langkah 6: Date and Time Pickers
-Date and Time Pickers termasuk pada kategori input dan selection widget, berikut adalah contoh penggunaan Date and Time Pickers.
+```
+!['Output](./image/6.png)
 
+### Langkah 6: Date and Time Pickers
+Date and Time Pickers termasuk pada kategori input dan selection widget, berikut adalah contoh penggunaan Date and Time Pickers.
+```dart
 import 'dart:async';
 import 'package:flutter/material.dart';
 
@@ -278,3 +289,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+```
