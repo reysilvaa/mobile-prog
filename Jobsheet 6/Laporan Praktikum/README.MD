@@ -6,8 +6,11 @@
     - [⚙️ Praktikum 2: Implementasi Button Row](./Praktikum%202/readme.md)
     - [📝 Praktikum 3: Implementasi Text Section](./Praktikum%203/readme.md)
     - [🖼️ Praktikum 4: Implementasi Image Section](./Praktikum%204/readme.md)
+<br>
 
 2. Silakan implementasikan di project baru "basic_layout_flutter" dengan mengakses sumber ini: https://docs.flutter.dev/codelabs/layout-basics
+
+<br>
 
 3. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
     <b>Link :</b> https://github.com/reysilvaa/mobile-prog/tree/Pertemuan-6
