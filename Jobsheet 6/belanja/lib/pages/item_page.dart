@@ -9,7 +9,7 @@ class ItemPage extends StatelessWidget {
       ),
       body: Center(
         child: const Text(
-          'Salt with 5000',
+          'Salt with 2000',
           style: TextStyle(fontSize: 24),
         ),
       ),

@@ -51,6 +51,10 @@ Item pada ListView saat ini ketika ditekan masih belum memberikan aksi tertentu.
 
 Untuk menambahkan sentuhan, letakkan cursor pada widget pembuka Card. Kemudian gunakan shortcut quick fix dari VSCode (Ctrl + . pada Windows atau Cmd + . pada MacOS). Sorot menu wrap with widget... Ubah nilai widget menjadi InkWell serta tambahkan named argument onTap yang berisi fungsi untuk berpindah ke halaman ItemPage. Ilustrasi potongan kode dapat anda lihat pada potongan berikut.
 
-
+![Before](https://jti-polinema.github.io/flutter-codelab/06-layout-navigasi/img//712e37fd6082bae9.png)   
 
 Jalankan aplikasi kembali dan pastikan ListView dapat disentuh dan berpindah ke halaman berikutnya. Periksa kembali jika terdapat kesalahan.
+
+| Sebelum Ditekan          | Setelah Ditekan          |
+|--------------------------|--------------------------|
+| ![Before](1.png)        | ![After](2.png)         |
