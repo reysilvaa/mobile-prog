@@ -1,3 +1,36 @@
+# 6. Praktikum 4: Implementasi image section
+Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktikum sebelumnya.
+
+### Langkah 1: Siapkan aset gambar
+Anda dapat mencari gambar di internet yang ingin ditampilkan. Buatlah folder images di root project `layout_flutter`. Masukkan file gambar tersebut ke folder images, lalu set nama file tersebut ke file `pubspec.yaml` seperti berikut:
+
+![alt text](https://jti-polinema.github.io/flutter-codelab/06-layout-navigasi/img//6b5a4bc2e1591c80.png)
+
+
+Contoh nama file gambar di atas adalah `lake.png`
+
+> [!TIP] 
+> <li>Perhatikan bahwa pubspec.yaml sensitif terhadap huruf besar-kecil, jadi tulis assets: dan URL gambar seperti yang ditunjukkan di atas.
+> <li> File pubspec juga sensitif terhadap spasi, jadi gunakan indentasi yang tepat.
+> <li> Anda mungkin perlu memulai ulang program yang sedang berjalan (baik di simulator atau perangkat yang terhubung) agar perubahan pubspec dapat diterapkan.</li>
+
+### Langkah 2: Tambahkan gambar ke body
+Tambahkan aset gambar ke dalam body seperti berikut:
+
+![alt text](https://jti-polinema.github.io/flutter-codelab/06-layout-navigasi/img//56a96f0d725017fd.png)
+
+
+BoxFit.cover memberi tahu kerangka kerja bahwa gambar harus sekecil mungkin tetapi menutupi seluruh kotak rendernya.
+
+### Langkah 3: Terakhir, ubah menjadi ListView
+Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karena ListView mendukung scroll yang dinamis saat aplikasi dijalankan pada perangkat yang resolusinya lebih kecil.
+
+![alt text](https://jti-polinema.github.io/flutter-codelab/06-layout-navigasi/img//d690c32e1656b4d0.png)
+
+
+#### Hasil : 
+##### Full Code : 
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -114,3 +147,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+```
+##### Output : 
+![alt text](1.png)

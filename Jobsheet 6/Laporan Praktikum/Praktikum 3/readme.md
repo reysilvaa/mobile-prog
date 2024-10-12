@@ -1,3 +1,32 @@
+# 5. Praktikum 3: Implementasi text section
+Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktikum sebelumnya.
+
+### Langkah 1: Buat widget textSection
+Tentukan bagian teks sebagai variabel. Masukkan teks ke dalam Container dan tambahkan padding di sepanjang setiap tepinya. Tambahkan kode berikut tepat di bawah deklarasi buttonSection:
+```dart
+Widget textSection = Container(
+  padding: const EdgeInsets.all(32),
+  child: const Text(
+    'Carilah teks di internet yang sesuai '
+    'dengan foto atau tempat wisata yang ingin '
+    'Anda tampilkan. '
+    'Tambahkan nama dan NIM Anda sebagai '
+    'identitas hasil pekerjaan Anda. '
+    'Selamat mengerjakan 🙂.',
+    softWrap: true,
+  ),
+);
+```
+Dengan memberi nilai `softWrap = true`, baris teks akan memenuhi lebar kolom sebelum membungkusnya pada batas kata.
+
+### Langkah 2: Tambahkan variabel text section ke body
+Tambahkan widget variabel textSection ke dalam body seperti berikut:
+
+![alt text](https://jti-polinema.github.io/flutter-codelab/06-layout-navigasi/img//aa2c329d766be950.png)
+
+#### Hasil :
+##### Full Code :
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -75,14 +104,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: ListView(
+        body: Column(
           children: [
-            Image.asset(
-              'images/lake.png',
-              width: 600,
-              height: 240,
-              fit: BoxFit.cover,
-            ),
             titleSection,
             buttonSection,
             textSection
@@ -114,3 +137,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+```
+##### Output :
+![alt text](1.png)
+
