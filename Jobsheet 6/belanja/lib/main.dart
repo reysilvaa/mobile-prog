@@ -1,13 +1,21 @@
+import 'package:belanja/pages/home_page.dart';
+import 'package:belanja/pages/item_page.dart';
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart'; // Import HomePage
-import 'pages/item_page.dart'; // Import ItemPage
 
 void main() {
-  runApp(MaterialApp(
-    initialRoute: '/', // Menetapkan halaman awal
-    routes: {
-      '/': (context) => HomePage(), // Routing untuk HomePage
-      '/item': (context) => ItemPage(), // Routing untuk ItemPage
-    },
-  ));
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Belanja App',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(),
+        '/item': (context) => ItemPage(), // Add this route
+      },
+    );
+  }
 }
