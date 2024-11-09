@@ -565,3 +565,5 @@ jawab : <br>
 ```@immutable``` digunakan untuk membuat class menjadi immutable, artinya class tersebut tidak dapat diubah setelah dibuat. Immutable class adalah class yang tidak dapat diubah setelah dibuat. Immutable class tidak memiliki setter dan tidak dapat diubah nilainya.<br>
 ```@override``` digunakan untuk menandakan bahwa method yang dideklarasikan pada class tersebut merupakan method yang diwarisi dari superclass. Dengan kata lain, method tersebut diwarisi dari superclass dan di-override pada class tersebut.
 5. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
+
+
