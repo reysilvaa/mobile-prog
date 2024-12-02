@@ -32,7 +32,7 @@ class _TakePictureScreenState extends State<TakePictureScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Achmad Mufid - 2241720159')),
+      appBar: AppBar(title: const Text('Reynald Silva - 2241720203')),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           try {
